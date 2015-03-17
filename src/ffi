@@ -1,0 +1,5 @@
+    struct Hunhandle;
+    #[link(name = "hunspell")]
+    extern {
+        fn Hunspell_create(affpath: *const c_char, dpath: *const c_char) -> *mut Hunhandle;
+    }
